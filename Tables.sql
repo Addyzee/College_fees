@@ -18,7 +18,7 @@ No_of_courses INT,
 PRIMARY KEY(Reg_no));
 
 CREATE TABLE Payment_details
-( Payment_ID VARCHAR(15)PRIMARY KEY,
+( Payment_ID VARCHAR(15)NOT NULL,
   Reg_no VARCHAR(15)REFERENCES Student_details(Reg_no),
   No_of_courses INT,
   Cost_per_course INT,
@@ -26,7 +26,8 @@ CREATE TABLE Payment_details
   Amount_paid INT,
   Payment_method VARCHAR(15),
   Amount_remaining INT,
-  Installment_amount INT);
+  Installment_amount INT,
+  PRIMARY KEY (Payment_ID));
 
 CREATE TABLE Payments( 
   Transaction_ID VARCHAR(10) PRIMARY KEY,
@@ -44,10 +45,17 @@ VALUES
 ('D12','Electical Engineering','Engineering','Electrical Works',8,26000)
 
 INSERT INTO Student_details VALUES 
-('P15/2097/2021','Kimani Andrew Kamau','08-11-2003','0702605230','Government','P15','Computer Science',6)
+('P15/2097/2021','Kimani Andrew Kamau','08-11-2003','0702605230','Government','P15','Computer Science',6),
 ('P15/1450/2021','Anthony Mbeka','07-17-2000','0722345768','Government','P15','Computer Science',7),
 ('H31/1479/2019','Ali Omar Ali','09-15-2001','0756323751','Self','H31','Medicine and Surgery',8),
 ('A21/1630/2018','Trevor Fred Kamau','04-03-1999','0710323032','Equity Bank','A21','Animal Husbandry',6)
+
+INSERT INTO Payment_details VALUES
+('TR/01','P15/1450/2021',7,35000,245000,50000,'Cash',195000,2000),
+('TR/02','P15/2097/2021',7,50000,,350000,0,'Cheque',350000,0),
+('TR/03','P15/1450/2021',7,25000,175000,50000,'Cash',125000,5000),
+('TR/04','P15/1450/2021',7,75000,525000,100000,'Cash',425000,27000)
+
 
 UPDATE Student_details
 SET DOB='08-11-2003' WHERE Reg_no='P15';
