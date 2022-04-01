@@ -1,3 +1,5 @@
+CREATE database college_fees
+Use college_fees
 CREATE TABLE Programmes
   ( ProgrammeID VARCHAR(10)PRIMARY KEY,
   Programme_name VARCHAR(30),
@@ -52,7 +54,7 @@ INSERT INTO Student_details VALUES
 
 INSERT INTO Payment_details VALUES
 ('TR/01','P15/1450/2021',7,35000,245000,50000,'Cash',195000,2000),
-('TR/02','P15/2097/2021',7,50000,,350000,0,'Cheque',350000,0),
+('TR/02','P15/2097/2021',7,50000,350000,0,'Cheque',350000,0),
 ('TR/03','P15/1450/2021',7,25000,175000,50000,'Cash',125000,5000),
 ('TR/04','P15/1450/2021',7,75000,525000,100000,'Cash',425000,27000)
 
@@ -102,21 +104,6 @@ ADD CONSTRAINT df_Sponsor
 DEFAULT 'Self' FOR Sponsor;
 
 --Default Sponsor is 'Self'
-
-
---VIEWS
---Creates a view for students and their respective sponsors
-create view v_student_sponsors
-AS
-SELECT Reg_no, Student_name, Contact, Sponsor
-FROM Student_details;
-
-
---Creates a view of students with a fee balance
-create view v_fee_balance
-AS
-select*from payment_details;
-where Amount_remaining>0
 
 
 
