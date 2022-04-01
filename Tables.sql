@@ -103,8 +103,22 @@ DEFAULT 'Self' FOR Sponsor;
 
 --Default Sponsor is 'Self'
 
+
+--VIEWS
+--Creates a view for students and their respective sponsors
 create view v_student_sponsors
 AS
 SELECT Reg_no, Student_name, Contact, Sponsor
 FROM Student_details;
+
+
+--Creates a view of students with a fee balance
+create view v_fee_balance
+AS
+select*from payment_details;
+where Amount_remaining>0
+
+
+
+
 
