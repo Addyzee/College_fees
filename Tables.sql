@@ -56,7 +56,7 @@ INSERT INTO Student_details VALUES
 ('P15/7087/2021','Amina Kinoti','07-11-2001','0715615236','Government','P15','Computer Science',6),
 ('A07/2097/2021','Seth Sebastian ','08-11-2003','0702605230','Self','A07','General Agriculture',8),
 ('A21/7902/2020','Franklin Kiplagat','08-21-1985','0702605230','Government','A21','Animal Husbandry',8),
-('A21/3583/2021','Simon Kamau','08-11-1998','0702605230','Government','A21','Animal Husbandry',8),
+('A21/3583/2021','Simon Kamau','08-11-1998','0702605230','Government','A21','Animal Husbandry',8)
 
 INSERT INTO Payment_details VALUES
 ('TR/01','P15/1450/2021',7,35000,245000,50000,'Cash',195000,2000),
