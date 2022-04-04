@@ -75,6 +75,18 @@ DROP COLUMN Total_expected;
 ALTER TABLE Payment_details
 DROP COLUMN Installment_amount;
 
+--Displaying columns
+--from the programmes table
+SELECT ProgrammeID, Programme_name, Faculty, Department,Number_of_courses, Cost_per_course 
+FROM Programmes
+--from the student_details table
+SELECT Reg_no ,Student_name,DOB,Contact,Sponsor,ProgrammeID,Degree_programme,No_of_courses
+FROM Student_details
+--from the payment_details table
+SELECT Payment_ID,Reg_no,No_of_courses,Cost_per_course,Amount_paid,Payment_method
+FROM Payment_details
+  
+
 --Amount expected per programme
 
 SELECT ProgrammeID,Programme_name,Faculty,Number_of_courses, Cost_per_course, Number_of_courses*Cost_per_course AS Amount_expected
