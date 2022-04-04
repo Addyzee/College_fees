@@ -50,7 +50,13 @@ INSERT INTO Student_details VALUES
 ('P15/2097/2021','Kimani Andrew Kamau','08-11-2003','0702605230','Government','P15','Computer Science',6),
 ('P15/1450/2021','Anthony Mbeka','07-17-2000','0722345768','Government','P15','Computer Science',7),
 ('H31/1479/2019','Ali Omar Ali','09-15-2001','0756323751','Self','H31','Medicine and Surgery',8),
-('A21/1630/2018','Trevor Fred Kamau','04-03-1999','0710323032','Equity Bank','A21','Animal Husbandry',6)
+('A21/1630/2018','Trevor Fred Kamau','04-03-1999','0710323032','Equity Bank','A21','Animal Husbandry',6),
+('D12/1323/2020','Mary Jane','05-03-1995','0115816578','Self','D12','Electrical Enginnering',8),
+('P15/2099/2019','Ali Hassan','07-12-2003','0702604630','Government','P15','Computer Science',6),
+('P15/7087/2021','Amina Kinoti','07-11-2001','0715615236','Government','P15','Computer Science',6),
+('A07/2097/2021','Seth Sebastian ','08-11-2003','0702605230','Self','A07','General Agriculture',8),
+('A21/7902/2020','Franklin Kiplagat','08-21-1985','0702605230','Government','A21','Animal Husbandry',8),
+('A21/3583/2021','Simon Kamau','08-11-1998','0702605230','Government','A21','Animal Husbandry',8),
 
 INSERT INTO Payment_details VALUES
 ('TR/01','P15/1450/2021',7,35000,245000,50000,'Cash',195000,2000),
