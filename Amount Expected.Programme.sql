@@ -1,3 +1,11 @@
-SELECT ProgrammeID,Programme_name,Faculty,Number_of_courses, Cost_per_course, Number_of_courses*Cost_per_course AS Amount_expected
-FROM Programmes
-ORDER BY Faculty;
+SELECT 
+pg.ProgrammeID AS Programme_ID,
+pg.Programme_name,
+pg.Department,
+SUM(std.No_of_courses*pg.Cost_per_course) AS Amount_expected
+FROM Student_details std
+JOIN Programmes pg
+ON pg.ProgrammeID=std.ProgrammeID
+GROUP BY pg.ProgrammeID,pg.Programme_name,pg.Department
+ORDER BY Programme_ID;
+
