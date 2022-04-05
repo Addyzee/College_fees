@@ -123,6 +123,20 @@ DEFAULT 'Self' FOR Sponsor;
 
 --Default Sponsor is 'Self'
 
+--VIEWS
+--Displays views
+--For self-sponsored syudents
+SELECT Reg_no, Student_name, Contact, Sponsor
+FROM sponsors
+WHERE sponsor='Self'
+--For government sponsored students
+SELECT Reg_no, Student_name, Contact, Sponsor
+FROM sponsors
+WHERE sponsor='Government'
+--For bank sponsored students
+SELECT Reg_no, Student_name, Contact, Sponsor
+FROM sponsors
+WHERE sponsor='Equity Bank'
 
 
 
