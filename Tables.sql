@@ -139,7 +139,7 @@ WHERE sponsor='Government'
 --For bank sponsored students
 SELECT Reg_no, Student_name, Contact, Sponsor
 FROM sponsors
-WHERE sponsor='Equity Bank'
+WHERE sponsor LIKE '%ank%'
 
 
 
