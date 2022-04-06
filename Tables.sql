@@ -141,6 +141,6 @@ SELECT Reg_no, Student_name, Contact, Sponsor
 FROM sponsors
 WHERE sponsor LIKE '%ank%'
 
-
-
-
+UPDATE Payment_details
+SET Amount_paid=50000
+WHERE Reg_no='P15/2097/2021';
