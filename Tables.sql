@@ -202,6 +202,12 @@ ADD CONSTRAINT df_Sponsor
 DEFAULT 'Self' FOR Sponsor;
 
 --Default Sponsor is 'Self'
+INSERT INTO Programmes VALUES
+('H15','Pharmacy','Science and Technology','Health Sciences',8,29000);
+INSERT INTO Student_details VALUES
+('H15/1011/2019','Njuguna Lee','02-21-2001','0719439160','Gertrudes','H15','Pharmacy',6);
+INSERT INTO Payment_details VALUES
+('TR/05','H15/1011/2019',6,29000,50000,'Cash')
 
 
 

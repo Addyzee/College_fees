@@ -11,6 +11,6 @@ ON std.Reg_no=payd.Reg_no
 JOIN Programmes pg
 ON pg.ProgrammeID=std.ProgrammeID
 GROUP BY std.Reg_no,std.Student_name,std.Contact,std.ProgrammeID,std.Sponsor,payd.Amount_paid
-HAVING (SUM(std.No_of_courses*pg.Cost_per_course))!>250000;
+HAVING (SUM(std.No_of_courses*pg.Cost_per_course))!>232000;
 
 

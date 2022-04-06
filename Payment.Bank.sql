@@ -1,4 +1,4 @@
-SELECT Payment_ID,std.Student_name,std.Reg_no,Payment_method
+SELECT Payment_ID,std.Student_name,std.Reg_no,Payment_method,Amount_paid
 FROM Payment_details payd
 JOIN Student_details std
 ON std.Reg_no=payd.Reg_no
