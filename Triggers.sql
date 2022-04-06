@@ -129,6 +129,7 @@ BEGIN
      ROLLBACK
 	 PRINT 'You are not allowed to create tables'
 END
+GO
 
 --For dropping tables
 CREATE TRIGGER Trg_Drop_Table
@@ -139,6 +140,7 @@ BEGIN
      ROLLBACK
 	 PRINT 'You are not allowed to drop this table'
 END
+GO
 
 DROP TABLE Payment_details/***Test for drop table trigger***/
 
